@@ -55,7 +55,10 @@ log-error = /opt/local/var/log/mysql5/error.log
 
 # Log all queries that have taken more than long_query_time seconds to execute 
 # to this file
-log-slow-queries = /opt/local/var/log/mysql5/slow-queries.log
+# As of MySQL 5.1.29 log-slow-queries is deprecated
+# log-slow-queries = /opt/local/var/log/mysql5/slow-queries.log
+slow_query_log = 1
+slow-query-log-file = /opt/local/var/log/mysql5/slow-queries.log
 
 # If a query takes longer than this many seconds, and log-slow-queries is 
 # enabled, the query is logged.
