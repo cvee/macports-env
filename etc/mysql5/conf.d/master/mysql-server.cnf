@@ -32,7 +32,7 @@ bind-address = 127.0.0.1
 character-set-server = utf8
 
 # Use utf8_general_ci as the default server collation
-collation-server = utf8_general_ci
+collation-server = utf8_unicode_ci
 
 # Use INNODB as the default storage engine
 default-storage-engine = InnoDB
